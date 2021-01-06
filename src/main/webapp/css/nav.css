@@ -1,0 +1,75 @@
+header
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei',sans-serif;
+}
+body
+{
+    background: #fff;
+}
+.topheader
+{
+    background: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 10px 100px;
+    z-index: 100000;
+}
+.topheader.sticky
+{
+    padding: 5px 100px;
+    background: #fff;
+}
+.topheader .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+.topheader ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topheader ul li
+{
+    position: relative;
+    list-style: none;
+}
+.topheader ul li a
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+.topheader.sticky .logo,
+.topheader.sticky ul li a
+{
+    color: #333333;
+}
+.tsection{
+    margin-top: 60px;
+    transition: 0.6s;
+}
+.tsection.stisection{
+    margin-top: 50px;
+}
+

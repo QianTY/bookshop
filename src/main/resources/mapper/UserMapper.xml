@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="czu.qty.bookshop.mapper.UserMapper">
+    
+    <select id="getUserFuzzy" resultType="user">
+        select * from user where 1=1
+        <if test="u_name!=null">
+            u_name like "%"#{u_name}"%"
+        </if>
+    </select>
+
+    <select id="findById" resultType="user" parameterType="string">
+        select * from user where email = #{value} or u_name=#{value}
+    </select>
+    <select id="findById1" resultType="user" parameterType="string">
+        select * from user where u_password=#{password} and (email=#{email} or u_name=#{email})
+    </select>
+
+
+</mapper>

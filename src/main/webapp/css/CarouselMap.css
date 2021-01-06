@@ -1,0 +1,48 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+.swapImg {
+    position:absolute;
+
+}
+.btn1 {
+    position:absolute;
+    height:90px;
+    width:60px;
+    background:rgba(0,0,0,0.5);/*设置背景颜色为黑色，透明度为50%*/
+    color:#ffffff;
+    text-align:center;
+    line-height:90px;
+    font-size:40px;
+    top:230px;
+    cursor:pointer;
+    /*display:none;*/
+}
+
+.btn1Right {
+    left:840px;/*图片宽度900-导航宽度60*/
+}
+#tabs {
+    position:absolute;
+    top:370px;
+    margin-left:350px;
+}
+.tab {
+    height:20px;
+    width:20px;
+    background:#05e9e2;
+    line-height:20px;
+    text-align:center;
+    font-size:10px;
+    float:left;
+    color:#ffffff;
+    margin-right:10px;
+    border-radius:100%;
+    cursor:pointer;
+    margin-top: 100px;
+}
+.bg {
+    background:#00ff21;
+}

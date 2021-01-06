@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="czu.qty.bookshop.mapper.OrderMapper">
+    <select id="getOrder" resultType="czu.qty.bookshop.pojo.Order">
+        select * from `order`
+            <where>
+                <if test="o_id!=null">
+                    o_id like "%"#{o_id}"%"
+                </if>
+                    and status=1 and u_id= #{u_id}
+            </where>
+    </select>
+
+
+</mapper>

@@ -1,0 +1,29 @@
+server:
+  port: 8089
+spring:
+  mvc:
+    view:
+      prefix:
+      suffix: .jsp
+  datasource:
+    username: root
+    password: wwc19981219
+    url: jdbc:mysql://47.101.32.40:3306/aiteach
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql:///book?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+#    username: root
+#    password: qty13813774272
+  mail:
+    host: smtp.qq.com
+    default-encoding: UTF-8
+    username: 2436850148@qq.com
+    password: xnauhvxpksjlebgf
+#
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: czu.qty.bookshop.pojo
